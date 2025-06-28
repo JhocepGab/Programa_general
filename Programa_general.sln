@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programa_general", "Programa_general\Programa_general.csproj", "{26B4F0A7-C374-43BE-ADEA-D6D3E42B9185}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensaje_de_alerta", "Mensaje_de_alerta\Mensaje_de_alerta.csproj", "{2907A8A8-B0ED-4797-A695-2AC7A424F401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary2", "ClassLibrary2\ClassLibrary2.csproj", "{1BDE857E-A1B2-45F3-8D7E-8613820F4966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2907A8A8-B0ED-4797-A695-2AC7A424F401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2907A8A8-B0ED-4797-A695-2AC7A424F401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2907A8A8-B0ED-4797-A695-2AC7A424F401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDE857E-A1B2-45F3-8D7E-8613820F4966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDE857E-A1B2-45F3-8D7E-8613820F4966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDE857E-A1B2-45F3-8D7E-8613820F4966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDE857E-A1B2-45F3-8D7E-8613820F4966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
