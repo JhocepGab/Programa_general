@@ -11,161 +11,50 @@ namespace ClassLibrary1
         public void TodosLosPisos()
         {
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("╔══════     SISTEMA DE MONITOREO DE EDIFICIO     ════════╗");
-            Console.WriteLine("║                                                        ║");
-            Console.WriteLine("║      ┌──────────────────────────────────────────┐      ║");
-            Console.WriteLine("║      │               PISO 4                     │      ║");
-            Console.WriteLine("║      │    ╔════════════════════════════╗        │      ║");
-            Console.WriteLine("║      │    ║ Monitoreo en Tiempo Real   ║        │      ║");
-            Console.WriteLine("║      │    ╚════════════════════════════╝        │      ║");
-            Console.WriteLine("║      │                PISO 3                    │      ║");
-            Console.WriteLine("║      │    ╔════════════════════════════╗        |      ║");
-            Console.WriteLine("║      │    ║ Monitoreo en Tiempo Real   ║        │      ║");
-            Console.WriteLine("║      │    ╚════════════════════════════╝        │      ║");
-            Console.WriteLine("║      │                PISO 2                    │      ║");
-            Console.WriteLine("║      │    ╔════════════════════════════╗        |      ║");
-            Console.WriteLine("║      │    ║ Monitoreo en Tiempo Real   ║        │      ║");
-            Console.WriteLine("║      │    ╚════════════════════════════╝        │      ║");
-            Console.WriteLine("║      │                PISO 1                    │      ║");
-            Console.WriteLine("║      │    ╔════════════════════════════╗        │      ║");
-            Console.WriteLine("║      │    ║ Monitoreo en Tiempo Real   ║        │      ║");
-            Console.WriteLine("║      │    ╚════════════════════════════╝        │      ║");
-            Console.WriteLine("║      └──────────────────────────────────────────┘      ║");
+            Console.WriteLine("╔══════     SISTEMA DE MONITOREO DE EDIFICIO    ═════════╗");
+            Console.WriteLine("║             ┌────────── PISO 4 ──────────┐             ║");
+            Console.WriteLine("║   ▒▒▒▒▒▒    │ Monitoreo en Tiempo Real   │   ▒▒▒▒▒▒    ║");
+            Console.WriteLine("║             └────────────────────────────┘             ║");
+            Console.WriteLine("║             ┌────────── PISO 3 ──────────┐             ║");
+            Console.WriteLine("║   ▒▒▒▒▒▒    │ Monitoreo en Tiempo Real   │   ▒▒▒▒▒▒    ║");
+            Console.WriteLine("║             └────────────────────────────┘             ║");
+            Console.WriteLine("║             ┌────────── PISO 2 ──────────┐             ║");
+            Console.WriteLine("║   ▒▒▒▒▒▒    │ Monitoreo en Tiempo Real   │   ▒▒▒▒▒▒    ║");
+            Console.WriteLine("║             └────────────────────────────┘             ║");
+            Console.WriteLine("║             ┌────────── PISO 1 ──────────┐             ║");
+            Console.WriteLine("║   ▒▒▒▒▒▒    │ Monitoreo en Tiempo Real   │   ▒▒▒▒▒▒    ║");
+            Console.WriteLine("║             └────────────────────────────┘             ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════╝");
             Console.ResetColor();
-
         }
-        public void ImagenPiso1()
+
+        public void MostrarPiso(int piso, int temperatura, int humo, string estado)
         {
-            Console.Clear();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 4              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 3              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 2              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝\n"); Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(" ╔════════ MONITOREO PISO 1 ══════╗");
-            Console.WriteLine(" ║            PISO 1              ║");
-            Console.WriteLine(" ║                                ║");
-            Console.WriteLine(" ║                                ║");
-            Console.WriteLine(" ╚════════════════════════════════╝");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"\n╔═════════════ Piso {piso} ═══════════════╗");
+            Console.WriteLine($"  ║      Temperatura: {temperatura} °C      ║");
+            Console.WriteLine($"  ║      Nivel de humo: {humo}%             ║");
+            Console.WriteLine($"  ║      Estado: {estado}                   ║");
+            Console.WriteLine("   ╚═════════════════════════════════════════╝");
             Console.ResetColor();
         }
 
-        public void ImagenPiso2()
+        public void MostrarExtintores(bool activos)
         {
-            Console.Clear();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 4              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 3              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝\n"); Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("╔═══════ MONITOREO PISO 2 ════════╗");
-            Console.WriteLine("║             PISO 2              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝"); Console.ResetColor();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 1              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
+            Console.ForegroundColor = activos ? ConsoleColor.Red : ConsoleColor.Green;
+            Console.WriteLine("┌────────────────────────────────────── Extintores ──────────────────────────────────────────┐");
+            Console.WriteLine(activos ? "│ LIBERANDO EXTINTORES           │" : "│ Listos para activarse                                │");
+            Console.WriteLine("└────────────────────────────────────────────────────────────────────────────────────────────┘");
             Console.ResetColor();
         }
 
-        public void ImagenPiso3()
+        public void MostrarLuces(bool activas)
         {
-            Console.Clear();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 4              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝\n"); Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("╔════════ MONITOREO PISO 3 ═══════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 3              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝"); Console.ResetColor();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 2              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 1              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
+            Console.ForegroundColor = activas ? ConsoleColor.Yellow : ConsoleColor.Gray;
+            Console.WriteLine("┌───────────────────────────────────── Luces Estroboscópicas ────────────────────────────────┐");
+            Console.WriteLine(activas ? "│ ACTIVADAS                      │" : "│ Inactivas                                          │");
+            Console.WriteLine("└────────────────────────────────────────────────────────────────────────────────────────────┘");
             Console.ResetColor();
         }
-        public void ImagenPiso4()
-        {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("╔════════ MONITOREO PISO 4 ═══════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 4              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝"); Console.ResetColor();
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 3              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 2              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.WriteLine("╔═════════════════════════════════╗");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("║             PISO 1              ║");
-            Console.WriteLine("║                                 ║");
-            Console.WriteLine("╚═════════════════════════════════╝");
-            Console.ResetColor();
-        }
-
-        public void AparatosQueCombateFuego()
-        {
-
-            Console.WriteLine("");
-            Console.WriteLine("      EQUIPO DE SEGURIDAD CONTRA INCENDIOS    ");
-            Console.WriteLine("╔══════════════════════════════════════════════════════════════════╗");
-            // Extintores
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("║                                                                  ║");
-            Console.WriteLine("║  EXTINTOR PORTÁTIL        ROCIADOR AUTOMÁTICO     SISTEMA FIJO   ║");
-            Console.WriteLine("║      ┌─────┐                    ╦                    ┌───┐       ║");
-            Console.WriteLine("║      │ ABC │                  ══╬══                  │▓▓▓│       ║");
-            Console.WriteLine("║      └──┬──┘                    ╩                    └─┬─┘       ║");
-            Console.WriteLine("║         │                       │                      │         ║");
-            Console.WriteLine("║         └                                              │         ║");
-            // Sistemas de detección
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine("║                                                                  ║");
-            Console.WriteLine("║  DETECTOR DE HUMO          ALARMA                   RESPALDO     ║");
-            Console.WriteLine("║    ┌──────┐                ╔═══╗                     ┌─────┐     ║");
-            Console.WriteLine("║    │ (()) │                ║!!!║                     │ UPS │     ║");
-            Console.WriteLine("║    └──────┘                ╚═══╝                     └─────┘     ║");
-            Console.WriteLine("║                                                                  ║");
-            Console.WriteLine("╚══════════════════════════════════════════════════════════════════╝");
-            Console.ResetColor();
-            Console.ReadKey();
-        }
-
     }
 }
