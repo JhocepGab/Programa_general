@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{a952cced-6eab-40e2-bca2-324c1d11a480}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary2\ClassLibrary2.csproj">
+      <Project>{1bde857e-a1b2-45f3-8d7e-8613820f4966}</Project>
+      <Name>ClassLibrary2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mensaje_de_alerta\Mensaje_de_alerta.csproj">
+      <Project>{2907a8a8-b0ed-4797-a695-2ac7a424f401}</Project>
+      <Name>Mensaje_de_alerta</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
